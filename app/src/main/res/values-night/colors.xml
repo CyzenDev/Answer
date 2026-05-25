@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--For dark theme-->
+    <color name="statusBarColor">#101010</color>
+    <color name="textColor">#D4D4D4</color>
+    <color name="titleTextColor">#D4D4D4</color>
+    <color name="subtitleTextColor">#BEBEBE</color>
+    <color name="content_background">#1A1A1A</color>
+    <color name="card_background">#282828</color>
+    <color name="list_divider">#2FBDBDBD</color>
+    <color name="list_item_tint">#333</color>
+    <!-- Custom switch -->
+    <color name="switch_track_off">#505050</color>
+    <color name="switch_track_off_stroke">#646464</color>
+
+
+    <color name="invert">#FFF</color>
+
+</resources>

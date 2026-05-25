@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="江铜Home答题辅助\n支持闯关答题和有奖答题\n优先从题库中寻找答案，并生成AI提示词"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_stroke"
+            android:backgroundTint="@color/textColor"
+            android:fillViewport="true"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical">
+
+            <EditText
+                android:id="@+id/et_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="配合自制Auto.js脚本使用，自动解析剪贴板\n粘贴题目，格式：\n基础XX题\n题目\nAXX\nBXX\nCXX\nDXX\n…"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:padding="5dp"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/tv_load"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_circle"
+                android:backgroundTint="@color/blue_500"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="加载题库"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.2" />
+
+            <TextView
+                android:id="@+id/tv_get"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_circle"
+                android:backgroundTint="@color/blue_500"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="获取答案"
+                android:textColor="@color/white" />
+
+            <Space
+                android:id="@+id/sp_copy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_circle"
+                android:backgroundTint="@color/blue_500"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="复制新题"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_btn_circle"
+            android:backgroundTint="@color/card_background"
+            android:elevation="1dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="10"
+                android:text="使用方法：\n1.加载题库\n2.开启小窗\n3.执行脚本\n4.点击窗口自动获取答案"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">答题辅助</string>
+
+    <!-- Settings -->
+    <string name="settings">设置</string>
+    <string name="answer_display_type">答案显示方式</string>
+    <string name="answer_display_type_tips">设置答案显示方式</string>
+    <string name="type_option_only">仅选项</string>
+    <string name="type_option_content">选项+内容</string>
+    <string name="type_quiz_option">题目+选项</string>
+    <string name="type_quiz_option_content">题目+选项+内容</string>
+
+    <string name="save_quiz">保存新题目到题库</string>
+    <string name="save_quiz_tips">将粘贴的新题目自动添加到题库，需要手动编辑答案</string>
+    <string name="other">其他</string>
+
+
+    <!-- About -->
+    <string name="about">关于</string>
+    <string name="version">版本</string>
+    <string name="changelog">更新日志</string>
+    <string name="feedback">反馈</string>
+    <string name="feedback_tips">如使用过程中出现问题或有任何建议可以向作者反馈</string>
+    <string name="share">分享</string>
+    <string name="share_tips">喜欢本应用不妨分享给你的朋友吧</string>
+    <string name="donate">打赏</string>
+    <string name="donate_tips">应用开发不易，每个功能都花费了大量的时间开发以及测试，您的支持就是我更新的最大动力</string>
+    <string name="share_app">分享本应用</string>
+    <string name="failed">失败</string>
+    <string name="open_source_license">开源许可</string>
+
+    <string name="my_other_apps">开发者的其他应用</string>
+    <string name="shift_calendar">倒班日历</string>
+    <string name="zhijian_weather">至简天气</string>
+    <string name="zhijian_toolbox">至简工具箱</string>
+    <string name="zhijian_flashlight">至简手电筒</string>
+
+    <string name="copyright_text" translatable="false">Copyright © 2026 Cyzen\nAll rights reserved.</string>
+
+</resources>

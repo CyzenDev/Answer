@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:colorAccent">@color/blue_500</item>
+        <item name="android:colorControlNormal">@color/blue_500</item>
+        <item name="android:colorPrimary">@color/blue_500</item>
+        <item name="android:colorPrimaryDark">@color/blue_500</item>
+        <item name="android:windowBackground">@color/content_background</item>
+        <item name="android:popupMenuStyle">@style/AppTheme.PopupMenu</item>
+    </style>
+
+    <style name="AppTheme.PopupMenu" parent="android:Widget.Material.Light.PopupMenu">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:popupElevation">8dp</item>
+        <item name="android:popupBackground">@drawable/popup_background</item>
+        <item name="android:dropDownVerticalOffset">5dp</item>
+    </style>
+
+</resources>
