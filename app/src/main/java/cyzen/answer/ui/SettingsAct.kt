@@ -24,14 +24,7 @@ class SettingsAct : Activity() {
 
     private var popupMenu: PopupMenu? = null
 
-    private val answerDisplayTypeArr by lazy {
-        arrayOf(
-            getString(R.string.type_option_only),
-            getString(R.string.type_option_content),
-            getString(R.string.type_quiz_option),
-            getString(R.string.type_quiz_option_content)
-        )
-    }
+    private val answerDisplayTypeArr by lazy { resources.getStringArray(R.array.answer_display_types) }
 
     private fun showPopupMenu(itemView: View, menuArr: Array<String>, checkedPos: Int, listener: PopupMenu.OnMenuItemClickListener) {
         val contentEnd = itemView.findViewById<TextView>(R.id.value_end) ?: return

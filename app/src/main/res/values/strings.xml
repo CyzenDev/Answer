@@ -5,11 +5,12 @@
     <string name="settings">设置</string>
     <string name="answer_display_type">答案显示方式</string>
     <string name="answer_display_type_tips">设置答案显示方式</string>
-    <string name="type_option_only">仅选项</string>
-    <string name="type_option_content">选项+内容</string>
-    <string name="type_quiz_option">题目+选项</string>
-    <string name="type_quiz_option_content">题目+选项+内容</string>
-
+    <string-array name="answer_display_types">
+        <item>仅选项</item>
+        <item>选项+内容</item>
+        <item>题目+选项</item>
+        <item>题目+选项+内容</item>
+    </string-array>
     <string name="save_quiz">保存新题目到题库</string>
     <string name="save_quiz_tips">将粘贴的新题目自动添加到题库，需要手动编辑答案</string>
     <string name="other">其他</string>
