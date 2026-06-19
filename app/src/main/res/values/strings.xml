@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">答题辅助</string>
 
+    <!-- Main -->
+    <string name="load_quiz_bank">加载题库</string>
+    <string name="quiz_bank_loaded">已加载题库</string>
+    <string name="get_answer">获取答案</string>
+
+
     <!-- Settings -->
     <string name="settings">设置</string>
     <string name="answer_display_type">答案显示方式</string>

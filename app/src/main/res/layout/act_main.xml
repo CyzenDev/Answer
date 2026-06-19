@@ -72,7 +72,7 @@
                 android:elevation="2dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="加载题库"
+                android:text="@string/load_quiz_bank"
                 android:textColor="@color/white" />
 
             <Space
@@ -91,7 +91,7 @@
                 android:elevation="2dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="获取答案"
+                android:text="@string/get_answer"
                 android:textColor="@color/white" />
 
             <Space

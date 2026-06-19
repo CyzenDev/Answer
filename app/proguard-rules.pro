@@ -24,7 +24,7 @@
 
 #去除SourceFile名称
 -keepattributes SourceFile
--renamesourcefileattribute
+-renamesourcefileattribute ""
 
 #替换包名
 -repackageclasses

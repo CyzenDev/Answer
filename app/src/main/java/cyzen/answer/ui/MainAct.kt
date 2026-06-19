@@ -139,6 +139,8 @@ class MainAct : Activity() {
                     }
                     dismiss()
                     toast("题库导入成功")
+                    tvLoad.setText(R.string.quiz_bank_loaded)
+                    tvTips.gone()
                 } catch (e: Exception) {
                     e.printStackTrace()
                     toast("题库导入失败: ${e.message}", true)
@@ -149,7 +151,6 @@ class MainAct : Activity() {
 
     private fun getAnswer(quizStr: String, auto: Boolean = false) {
         pbLoading.show()
-        tvTips.gone()
         etQuiz.clearFocus() //清除EditText的焦点，否则一获得焦点就会弹软键盘
 
         CompletableFuture.supplyAsync { //异步获取答案
