@@ -177,7 +177,7 @@ class QuizManager(private val context: Context, private val clipboardManager: Cl
         var i = 0
         while (i < lines.size) {
             val lineStr = lines[i]
-            val category = lineStr.run { if (getOrNull(0) == '(' && getOrNull(3) == '）') "${substring(1, 4)}题" else throw Exception("第${i + 1}行分类解析错误") }
+            val category = lineStr.run { if (getOrNull(0) == '(' && getOrNull(3) == '）') "${substring(1, 3)}题" else throw Exception("第${i + 1}行分类解析错误") }
             val question = lineStr.substring(4)
 
             val options = mutableListOf<String>()
